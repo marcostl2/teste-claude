@@ -5,8 +5,9 @@ import { p1Route } from './routes/p1'
 import { p2Route } from './routes/p2'
 import { p3Route } from './routes/p3'
 import { p4Route } from './routes/p4'
+import { p5Route } from './routes/p5'
 
-const routeTree = rootRoute.addChildren([indexRoute, p1Route, p2Route, p3Route, p4Route])
+const routeTree = rootRoute.addChildren([indexRoute, p1Route, p2Route, p3Route, p4Route, p5Route])
 
 export const router = createRouter({ routeTree })
 
