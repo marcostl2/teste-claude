@@ -1,0 +1,94 @@
+.home-page {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 30%, #150830 0%, #060612 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.home-icon {
+  font-size: 48px;
+  color: #c084fc;
+  filter: drop-shadow(0 0 20px rgba(192, 132, 252, 0.8));
+  animation: home-icon-pulse 3s ease-in-out infinite;
+}
+
+@keyframes home-icon-pulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 20px rgba(192, 132, 252, 0.8)); }
+  50% { transform: scale(1.1); filter: drop-shadow(0 0 40px rgba(192, 132, 252, 1)); }
+}
+
+.home-title {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+  background: linear-gradient(135deg, #e9d5ff 0%, #c084fc 50%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-subtitle {
+  color: rgba(196, 148, 255, 0.6);
+  font-size: 1rem;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.home-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-card-link {
+  text-decoration: none;
+}
+
+.home-card-preview {
+  width: 160px;
+  height: 220px;
+  background: radial-gradient(ellipse at top, #1a0533 0%, #0d0d1a 100%);
+  border: 1px solid rgba(139, 69, 255, 0.4);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.home-card-preview:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: rgba(192, 132, 252, 0.7);
+  box-shadow: 0 20px 60px rgba(139, 69, 255, 0.3), 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.home-card-symbol {
+  font-size: 40px;
+  color: #c084fc;
+  filter: drop-shadow(0 0 12px rgba(192, 132, 252, 0.8));
+}
+
+.home-card-label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(196, 148, 255, 0.8);
+}
