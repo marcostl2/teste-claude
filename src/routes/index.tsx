@@ -10,7 +10,7 @@ const IndexPage = () => (
       Escolha uma carta para revelar o RAJ
     </p>
     <div style={{ display: 'flex', gap: 16 }}>
-      {(['p1', 'p2', 'p3'] as const).map((p) => (
+      {(['p1', 'p2', 'p3', 'p4'] as const).map((p) => (
         <Link key={p} to={`/${p}`} style={cardLinkStyle}>
           {p.toUpperCase()}
         </Link>
