@@ -32,6 +32,7 @@ export const rootRoute = createRootRoute({
         <Link to="/p13" style={navLinkStyle} activeProps={{ style: activeLinkStyle }}>P13</Link>
         <Link to="/p14" style={navLinkStyle} activeProps={{ style: activeLinkStyle }}>P14</Link>
         <Link to="/p15" style={navLinkStyle} activeProps={{ style: activeLinkStyle }}>P15</Link>
+        <Link to="/p16" style={navLinkStyle} activeProps={{ style: activeLinkStyle }}>P16</Link>
       </nav>
       <Outlet />
     </>
