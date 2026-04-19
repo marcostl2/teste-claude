@@ -15,8 +15,9 @@ import { p11Route } from './routes/p11'
 import { p12Route } from './routes/p12'
 import { p13Route } from './routes/p13'
 import { p14Route } from './routes/p14'
+import { p15Route } from './routes/p15'
 
-const routeTree = rootRoute.addChildren([indexRoute, p1Route, p2Route, p3Route, p4Route, p5Route, p6Route, p7Route, p8Route, p9Route, p10Route, p11Route, p12Route, p13Route, p14Route])
+const routeTree = rootRoute.addChildren([indexRoute, p1Route, p2Route, p3Route, p4Route, p5Route, p6Route, p7Route, p8Route, p9Route, p10Route, p11Route, p12Route, p13Route, p14Route, p15Route])
 
 export const router = createRouter({ routeTree })
 
